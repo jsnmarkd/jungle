@@ -1,7 +1,19 @@
 Rails.application.routes.draw do
 
+  get 'sessions/new'
+  get 'sessions/create'
+  get 'sessions/destroy'
+  get 'users/new'
+  get 'users/create'
   get 'about/index'
   root to: 'products#index'
+
+  get '/signup' => 'users#new'
+  post '/users' => 'users#create'
+
+  get '/login' => 'sessions#new'
+  post '/login' => 'sessions#create'
+  get '/logout' => 'sessions#destroy'
 
   resources :products, only: [:index, :show]
   resources :categories, only: [:show]

@@ -51,8 +51,37 @@ RSpec.describe User, type: :model do
       @user2.save
       expect(@user2.errors.full_messages).to include("Email has already been taken")
     end
-
     
+  end
+
+  describe '.authenticate_with_credentials' do
+
+    let (:user) { User.new(:firstname => 'Jess', :lastname => 'Lopez', :email => 'JLo@lhl.ca', :password => 'password', :password_confirmation => 'password') }
+
+    it 'should return nil when authentication fails' do
+      user.save
+      user = User.authenticate_with_credentials('JLo@lhl.ca', 'password1')
+      expect(user).to eql(nil)
+    end
+
+    it 'should return the user data when authentication succeeds' do
+      user.save
+      user = User.authenticate_with_credentials('JLo@lhl.ca', 'password')
+      expect(user).not_to eql(nil)
+    end
+    
+    it 'should return the user data when authentication succeeds with case sensitivity' do
+      user.save
+      user = User.authenticate_with_credentials('jlo@lhl.ca', 'password')
+      expect(user).not_to eql(nil)
+    end
+    
+    it 'should return the user data when authentication succeeds with leading and trailing whitespaces' do
+      user.save
+      user = User.authenticate_with_credentials(' JLo@lhl.ca ', 'password')
+      expect(user).not_to eql(nil)
+    end
+
   end
 
 end

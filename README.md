@@ -1,6 +1,26 @@
-# Jungle
+<h1 align="center">
+  <br>
+  <!-- <img src="https://github.com/jsnmarkd/scheduler/blob/master/public/images/logo.png?raw=true" width="200" alt="logo"> -->
+  <br>
+    Jungle
+  <br>
+</h1>
 
-A mini e-commerce application built with Rails 6.1 for purposes of teaching Rails by example.
+<h4 align="center">
+  This project is a mini E-Commerce Application built with 
+  <a href="https://rubyonrails.org/">Rails</a> 6.1 
+  for purposes of teaching Rails by example.
+</h4>
+
+<p align="center">
+  <a href="#final-product">Final Product</a> •
+  <a href="#setup">Setup</a> •
+  <a href="#database">Database</a> •
+  <a href="#stripe-testing">Stripe Testing</a> •
+  <a href="#dependencies">Dependencies</a> •
+</p>
+
+## Final Product
 
 ## Setup
 
@@ -28,4 +48,4 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 - Rails 6.1 [Rails Guide](http://guides.rubyonrails.org/v6.1/)
 - Bootstrap 5
 - PostgreSQL 9.x
-- Stripe
+- [Stripe](https://stripe.com/)

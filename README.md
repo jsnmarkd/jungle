@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <img src="https://github.com/jsnmarkd/jungle/blob/master/docs/logo.png?raw=true" width="200" alt="logo">
+  <img src="https://github.com/jsnmarkd/jungle/blob/master/docs/logo.png?raw=true" alt="logo">
   <br>
     Jungle
   <br>
@@ -21,6 +21,14 @@
 </p>
 
 ## Final Product
+
+<p align="center">
+<img src="https://github.com/jsnmarkd/jungle/blob/master/docs/clip2.gif?raw=true">
+</p>
+<p align="center">
+<img src="https://github.com/jsnmarkd/jungle/blob/master/docs/clip4.gif?raw=true">
+</p>
+
 
 ## Setup
 

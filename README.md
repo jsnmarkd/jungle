@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <!-- <img src="https://github.com/jsnmarkd/scheduler/blob/master/public/images/logo.png?raw=true" width="200" alt="logo"> -->
+  <img src="https://github.com/jsnmarkd/jungle/blob/master/docs/logo.png?raw=true" width="200" alt="logo">
   <br>
     Jungle
   <br>
